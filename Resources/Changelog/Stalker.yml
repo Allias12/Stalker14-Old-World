@@ -3729,5 +3729,14 @@
   id: 418
   time: '2026-09-10T00:46:35.214420+00:00'
   url: https://github.com/Stalker-Old-World/Stalker14-Old-World/pull/41
+- author: SnekiChaos
+  changes:
+  - message: Workbench and Lathe to Military Base
+    type: Add
+  - message: Replaced old roofing entities with proper ones in the base.
+    type: Tweak
+  id: 419
+  time: '2026-09-11T17:16:51.300403+00:00'
+  url: https://github.com/Stalker-Old-World/Stalker14-Old-World/pull/44
 Name: Stalker
 Order: -1
