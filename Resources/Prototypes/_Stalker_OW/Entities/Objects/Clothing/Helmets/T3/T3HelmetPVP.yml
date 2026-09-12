@@ -308,6 +308,6 @@
   description: A houndlike animal's skull with steel plates and a cover to the back
   components:
   - type: Sprite
-    sprite: _Stalker_OW\Objects\Helmets\ZenithSkull5.rsi
+    sprite: _Stalker_OW/Objects/Helmets/ZenithSkull5.rsi
   - type: Clothing
-    sprite: _Stalker_OW\Objects\Helmets\ZenithSkull5.rsi
+    sprite: _Stalker_OW/Objects/Helmets/ZenithSkull5.rsi
