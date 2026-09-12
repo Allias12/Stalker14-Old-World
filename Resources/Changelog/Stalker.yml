@@ -3738,5 +3738,25 @@
   id: 419
   time: '2026-09-11T17:16:51.300403+00:00'
   url: https://github.com/Stalker-Old-World/Stalker14-Old-World/pull/44
+- author: kuro964
+  changes:
+  - message: '"Reduced flashing & motion" option added under Accessibility'
+    type: Add
+  - message: Insta-drawing items that have a cooldown is no longer possible
+    type: Fix
+  - message: Movement stutters should be improved or fixed
+    type: Fix
+  - message: Combining items (i.e. Spice & meat) now properly places the product into
+      your storage or hand
+    type: Fix
+  - message: Mutant spawning cooldowns now correctly apply
+    type: Fix
+  - message: Spice mix can now be bought in bulk
+    type: Tweak
+  - message: Made T1 cloak descriptions clearer
+    type: Tweak
+  id: 420
+  time: '2026-09-12T23:11:36.953164+00:00'
+  url: https://github.com/Stalker-Old-World/Stalker14-Old-World/pull/45
 Name: Stalker
 Order: -1
