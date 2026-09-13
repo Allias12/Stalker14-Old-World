@@ -3798,5 +3798,24 @@
   id: 423
   time: '2026-09-13T22:38:03.576582+00:00'
   url: https://github.com/Stalker-Old-World/Stalker14-Old-World/pull/48
+- author: Allias12
+  changes:
+  - message: Ballistic Plates
+    type: Add
+  - message: Steel Rods
+    type: Add
+  - message: Armor values removed for ERP
+    type: Tweak
+  - message: Removed T4, T5 from garbage detecting
+    type: Tweak
+  - message: Removed most of T3 (Kept Brass and Hide)
+    type: Tweak
+  - message: Changed Brass to Ballistic Plates for PVP armor recipes
+    type: Tweak
+  - message: Changed Mat values in T3 Caches
+    type: Tweak
+  id: 424
+  time: '2026-09-13T22:43:16.661507+00:00'
+  url: https://github.com/Stalker-Old-World/Stalker14-Old-World/pull/49
 Name: Stalker
 Order: -1
