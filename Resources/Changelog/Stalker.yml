@@ -3765,5 +3765,28 @@
   id: 421
   time: '2026-09-13T07:42:40.754383+00:00'
   url: https://github.com/Stalker-Old-World/Stalker14-Old-World/pull/46
+- author: Allias12
+  changes:
+  - message: removed Nato sight added RU silencer
+    type: Tweak
+  - message: Breathing
+    type: Add
+  - message: O2 tanks in our namespace
+    type: Add
+  - message: gasmask helmets are masks
+    type: Tweak
+  - message: removed herc hunger meta
+    type: Tweak
+  - message: removed monster hunger meta
+    type: Tweak
+  - message: Berry crafting reagents
+    type: Add
+  - message: botanical book to reflect changes
+    type: Tweak
+  - message: made bandages take half as long to apply
+    type: Tweak
+  id: 422
+  time: '2026-09-13T22:33:44.367582+00:00'
+  url: https://github.com/Stalker-Old-World/Stalker14-Old-World/pull/47
 Name: Stalker
 Order: -1
