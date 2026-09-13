@@ -57,12 +57,7 @@
       # T3
       rarePrototypes:
       - STCraftSheetBrassT3
-      - STCraftPlasticFittingT3
-      - STCraftOakPlankT3
-      - STCraftQuartzCrystalT3
       - STCraftSturdyHideT3
-      - STCraftGlueKitT3
-      - STCraftMultilayerPCBT3
     
       # Weapons
       - STWeaponShotgunMossbergM88
@@ -83,20 +78,6 @@
       # Currency
       - Roubles2000
       rareChance: 0.05 # 5%
-
-      epicPrototypes:
-      - STCraftPlasticFittingT4
-      - STCraftYewPlankT4
-      - STCraftPolymerFabricT4
-      - STCraftIndustrialThreadStaplesKitT4
-      epicChance: 0.005 # 0.5%
-
-      legendaryPrototypes:
-      - STCraftPlasticFittingT5
-      - STCraftRedWoodPlankT5
-      - STCraftCompositeMaterialT5
-      - STCraftHighStrengthKitT5
-      legendaryChance: 0.0015 # 0.15% (about 1 in 667 successful spawns)
       # ST:OW end
 
 - type: entity

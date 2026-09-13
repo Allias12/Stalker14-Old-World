@@ -38,7 +38,7 @@
     ToolkitTearTwo:
       amount: 1
       catalyzer: true
-    STCraftSheetBrassT3:
+    STOWCraftBallisticPlateT3:
       amount: 4
     STCraftSturdyHideT3:
       amount: 5
@@ -89,7 +89,7 @@
     ToolkitTearTwo:
       amount: 1
       catalyzer: true
-    STCraftSheetBrassT3:
+    STOWCraftBallisticPlateT3:
       amount: 5
     STCraftSturdyHideT3:
       amount: 4

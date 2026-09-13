@@ -114,14 +114,6 @@
     sprite: _Stalker_EN/Objects/Clothing/cloak/emergency_resource_pouch.rsi
   - type: Clothing
     sprite: _Stalker_EN/Objects/Clothing/cloak/emergency_resource_pouch.rsi
-  - type: Armor
-    armorClass: 2
-    modifiers:
-      coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
-        Heat: 0.9
   - type: Storage
     maxItemSize: Normal
     blacklist:
