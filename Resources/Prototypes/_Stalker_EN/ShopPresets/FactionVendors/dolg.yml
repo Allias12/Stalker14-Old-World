@@ -258,7 +258,7 @@
         Beaker: 40
         Syringe: 20
         ClothingGoPro: 250
-        ExtendedEmergencyOxygenTankFilledStalker: 50
+        ExtendedEmergencyOxygenTankFilledSTOW: 300
         TrashDetectorTier1: 200
         Matchbox: 10
         HatchetStalker: 150
@@ -278,7 +278,7 @@
       priority: 11
       items:
         STModuleScopeRiflesT1Ru: 600
-        STModuleScopeRiflesT1Nato: 600
+        STModuleSilencerRiflesT1Ru: 600
         STModuleShotgunChokeT1: 200
         STModuleSniperSightT1: 600
         STModuleSilencerSniperT1: 600

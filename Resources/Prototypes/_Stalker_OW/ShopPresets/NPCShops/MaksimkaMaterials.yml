@@ -72,6 +72,7 @@
         TrashDetectorTier3: 8500
         longrangemetaldetector: 3000
         STCombatKnife: 50
+        ExtendedEmergencyOxygenTankFilledSTOW: 400
 
     - name: shop-category-blueprints
       priority: 3

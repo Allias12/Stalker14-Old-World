@@ -320,7 +320,7 @@
         PowerCellHyper: 50
         BoxFlare: 60
         ClothingBackpackDuffelGreenStalkerHydroponic: 500
-        ExtendedEmergencyOxygenTankFilledStalker: 50
+        ExtendedEmergencyOxygenTankFilledSTOW: 300
         FoldedFlagMerc: 250
         HandLabeler: 75 # OW change
         # Cameras

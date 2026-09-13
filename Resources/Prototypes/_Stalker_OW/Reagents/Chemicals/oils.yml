@@ -1,0 +1,33 @@
+﻿- type: reagent
+  id: STOWOilsBrute1
+  name: reagent-name-stow-oil-medical-1
+  desc: reagent-desc-stow-oil-reaction
+  physicalDesc: flavor-complex-grass
+  flavor: bitter
+  color: "#660099"
+  metabolisms:
+    Medicine:
+      effects:
+        - !type:HealthChange
+          damage:
+            types:
+              Piercing: -5
+              Slash: -5
+              Blunt: -5
+
+- type: reagent
+  id: STOWOilsCaustic1
+  name: reagent-name-stow-oil-caustic-1
+  desc: reagent-desc-stow-oil-reaction
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: berry
+  color: "#670099"
+  metabolisms:
+    Medicine:
+      effects:
+        - !type:HealthChange
+          damage:
+            groups:
+              Toxin: -5
+            types:
+              Heat: -5
