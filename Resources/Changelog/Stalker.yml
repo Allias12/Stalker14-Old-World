@@ -3788,5 +3788,15 @@
   id: 422
   time: '2026-09-13T22:33:44.367582+00:00'
   url: https://github.com/Stalker-Old-World/Stalker14-Old-World/pull/47
+- author: SquishyEmmaaaa
+  changes:
+  - message: .45 ACP ammo blueprints now can be found in caches.
+    type: Add
+  - message: Large Boxes of 45ACP AP ammo now contain the proper 300 rounds instead
+      of 30.
+    type: Fix
+  id: 423
+  time: '2026-09-13T22:38:03.576582+00:00'
+  url: https://github.com/Stalker-Old-World/Stalker14-Old-World/pull/48
 Name: Stalker
 Order: -1
