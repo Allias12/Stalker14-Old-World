@@ -302,7 +302,7 @@
     sprite: _Stalker/Objects/Clothing/hats/VityazS1.rsi
 
 - type: entity
-  parent: STOWClothingHeadHelmetT3PVPAltMaskBase
+  parent: STOWClothingHeadHelmetT3PVPBase
   id: STOWClothingHeadHelmetT3PVPAltMaskSkull3
   name: Wolf Visage
   description: A houndlike animal's skull with steel plates and a cover to the back
@@ -311,3 +311,6 @@
     sprite: _Stalker_OW/Objects/Helmets/ZenithSkull5.rsi
   - type: Clothing
     sprite: _Stalker_OW/Objects/Helmets/ZenithSkull5.rsi
+  - type: HideLayerClothing
+    slots:
+    - HeadTop
