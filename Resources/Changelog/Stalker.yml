@@ -3758,5 +3758,12 @@
   id: 420
   time: '2026-09-12T23:11:36.953164+00:00'
   url: https://github.com/Stalker-Old-World/Stalker14-Old-World/pull/45
+- author: SquishyEmmaaaa
+  changes:
+  - message: Discord links should now point to the proper discord.
+    type: Fix
+  id: 421
+  time: '2026-09-13T07:42:40.754383+00:00'
+  url: https://github.com/Stalker-Old-World/Stalker14-Old-World/pull/46
 Name: Stalker
 Order: -1
