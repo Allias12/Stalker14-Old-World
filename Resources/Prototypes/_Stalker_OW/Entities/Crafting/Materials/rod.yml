@@ -1,0 +1,22 @@
+﻿- type: entity
+  parent: STSheetMetalBase
+  id: STOWCraftRodSteelT3
+  name: Steel Rod T3
+  description: A steel rod kept safe from the horrors of the zone.
+  suffix: STOW, Material, T3
+  components:
+    - type: STWeight
+      self: 1
+    - type: PhysicalComposition
+      materialComposition:
+        Brass: 100
+    - type: Stack
+      stackType: STBrass
+      count: 1
+    - type: Sprite
+      sprite: Objects/Materials/parts.rsi
+      state: rods
+    - type: Craftable
+    - type: Appearance
+    - type: RepositoryItem
+      categoryName: repository-materials-category

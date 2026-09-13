@@ -1,0 +1,23 @@
+﻿- type: entity
+  parent: STSheetMetalBase
+  id: STOWCraftBallisticPlateT3
+  name: T3 Ballistic Plates
+  description: A ballistic plate kept safe from the horrors of the zone
+  suffix: STOW, Material, T3
+  components:
+    - type: STWeight
+      self: 1
+    - type: PhysicalComposition
+      materialComposition:
+        Brass: 100
+    - type: Stack
+      stackType: STBrass
+      count: 1
+    - type: Sprite
+      sprite: _Stalker_OW/Objects/Materials/ballisticplate.rsi
+      state: plate
+      scale: .7, .7
+    - type: Craftable
+    - type: Appearance
+    - type: RepositoryItem
+      categoryName: repository-materials-category

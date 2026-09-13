@@ -12,15 +12,17 @@
     - type: StorageFill
       contents:
         - id: STCraftMultilayerPCBT3
-          prob: 0.2
+          prob: 0.1
         - id: STCraftQuartzCrystalT3
-          prob: 0.2
+          prob: 0.1
         - id: STCraftSturdyHideT3
-          prob: 0.4
-        - id: STCraftGlueKitT3
           prob: 0.3
+        - id: STCraftGlueKitT3
+          prob: 0.1
         - id: STCraftSheetBrassT3
           prob: 0.3
+        - id: STOWCraftBallisticPlateT3
+          prob: 0.1
         # ow change end
         - id: ST8mmBuckshotBoxCinkBlueprint
           prob: 0.05
@@ -124,16 +126,6 @@
           prob: 0.15
         - id: STCraftTransformer
           prob: 0.15
-        - id: STCraftHighPerformanceChipT4
-          prob: 0.005
-        - id: STCraftSheetAluminumT4
-          prob: 0.005
-        - id: STCraftPlasticFittingT4
-          prob: 0.005
-        - id: STCraftPolymerFabricT4
-          prob: 0.001
-        - id: STCraftIndustrialThreadStaplesKitT4
-          prob: 0.001
         - id: RGD5Grenade
           prob: 0.1
         # EN additions
