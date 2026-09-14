@@ -3817,5 +3817,12 @@
   id: 424
   time: '2026-09-13T22:43:16.661507+00:00'
   url: https://github.com/Stalker-Old-World/Stalker14-Old-World/pull/49
+- author: Allias12
+  changes:
+  - message: Removed accuracy wielding buff from FALo
+    type: Tweak
+  id: 425
+  time: '2026-09-14T01:41:07.814416+00:00'
+  url: https://github.com/Stalker-Old-World/Stalker14-Old-World/pull/50
 Name: Stalker
 Order: -1
