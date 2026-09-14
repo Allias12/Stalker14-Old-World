@@ -3824,5 +3824,12 @@
   id: 425
   time: '2026-09-14T01:41:07.814416+00:00'
   url: https://github.com/Stalker-Old-World/Stalker14-Old-World/pull/50
+- author: kuro964
+  changes:
+  - message: Rostok only spawns up to T2 artifacts
+    type: Tweak
+  id: 426
+  time: '2026-09-14T07:36:04.199337+00:00'
+  url: https://github.com/Stalker-Old-World/Stalker14-Old-World/pull/51
 Name: Stalker
 Order: -1
