@@ -89078,7 +89078,7 @@ entities:
     - type: STMapKey
       value: RostokAndWilds
     - type: ZoneArtifactSpawnerMapTier
-      maxTier: 3
+      maxTier: 2
     - type: STAnomalyGeneratorTarget
       optionsId: STRostokAndWildsGenerationOptions
     - type: LightCycle
