@@ -7,9 +7,6 @@
     self: 4
   - type: PullDoAfter
     pullTime: 3.5
-  - type: GunWieldBonus
-    minAngle: -47
-    maxAngle: -50
   - type: Clothing
     sprite: _Stalker_EN/Objects/Weapons/Guns/Rifles/FALo.rsi
   - type: Sprite
@@ -58,8 +55,6 @@
         whitelist:
           tags:
           - STCartridge751
-  - type: STWeaponDamageFalloff
-    falloffMultiplier: 0.8
   - type: STWeaponAccuracy
     accuracyMultiplier: 1.56
 
