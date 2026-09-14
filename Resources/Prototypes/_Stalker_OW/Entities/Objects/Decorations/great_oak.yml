@@ -1,0 +1,10 @@
+- type: entity
+  parent: BaseTree
+  id: GreatOak
+  name: Great Oak
+  description: A very old oak tree.
+  suffix: ST, OW, Mapping
+  components:
+  - type: Sprite
+    sprite: _Stalker_OW/Objects/Decoration/great_oak.rsi
+    state: base
