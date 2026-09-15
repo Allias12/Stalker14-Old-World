@@ -19,13 +19,6 @@
       - !type:STWeightModifier
         time: 2.0
         weightModifier: -20
-    Medicine:
-      metabolismRate: 0.1
-      effects:
-        - !type:SatiateHunger
-          factor: 1
-        - !type:SatiateThirst
-          factor: 2
 
 - type: reagent
   id: STTaurine
@@ -46,23 +39,9 @@
         conditions:
         walkSpeedModifier: 1.04
         sprintSpeedModifier: 1.04
-      - !type:ModifyStatusEffect
-        effectProto: StatusEffectStunned
-        time: 3
-        type: Remove
-      - !type:ModifyKnockdown
-        time: 3
-        type: Remove
-      - !type:ModifyStatusEffect
-        effectProto: StatusEffectForcedSleeping
-        time: 3
-        type: Remove
     Medicine:
       metabolismRate: 0.1
       effects:
-        - !type:ResetNarcolepsy
-        - !type:SatiateHunger
-          factor: 2
         - !type:SatiateThirst
           factor: 2
 

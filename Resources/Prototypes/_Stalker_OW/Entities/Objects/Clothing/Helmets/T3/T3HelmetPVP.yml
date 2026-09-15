@@ -235,8 +235,9 @@
           Slash: 0.85
           Piercing: 0.75 # OW - Fixed missing stat
         flatReductions: 
-          Radiation: 4 # OW - Fixed Stat to match T3 Gasmask
-    - type: IngestionBlocker
+          Radiation: 4 # OW - Fixed Stat to match T3 Gasmas
+    - type: BreathMask # OW - Allowed these to be used like breathmasks
+    - type: IngestionBlocker 
     - type: IdentityBlocker
     - type: Tag
       tags:

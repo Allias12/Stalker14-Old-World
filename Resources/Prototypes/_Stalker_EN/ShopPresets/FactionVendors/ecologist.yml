@@ -335,7 +335,7 @@
         LargeBeaker: 50
         BaseChemistryEmptyVial: 40
         ClothingGoPro: 250
-        ExtendedEmergencyOxygenTankFilledStalker: 50
+        DoubleEmergencyOxygenTankFilledSTOW: 300
         TrashDetectorTier1: 200
         Matchbox: 10
         HatchetStalker: 150
