@@ -126,6 +126,16 @@
       maxAmount: 4
       chance: 0.50
 
+- type: entity
+  id: MutantSpawnerZombie_1to4_75
+  parent: MutantSpawnerZombieBase
+  name: zombie spawner (1-4, 75%)
+  components:
+    - type: SpawnOnApproach
+      minAmount: 1
+      maxAmount: 4
+      chance: 0.75
+
 # Rare isolated spawn
 - type: entity
   id: MutantSpawnerZombie_1to2_01
