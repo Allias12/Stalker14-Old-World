@@ -76,7 +76,21 @@ public sealed class SmokeSystem : EntitySystem
                 continue;
 
             smoke.NextSecond += TimeSpan.FromSeconds(1);
-            SmokeReact(uid, smoke.SmokeEntity);
+
+            // ST:OW - Check if smoke despawned w/o clearing SmokeAffectedComponent
+            var smokeUid = smoke.SmokeEntity;
+             
+            if (!_smokeQuery.TryGetComponent(smokeUid, out var smokeComponent))
+            {
+                Logger.WarningS(
+                    "smoke-debug",
+                    $"Removing stale SmokeAffectedComponent from {ToPrettyString(uid)}. " +
+                    $"Referenced smoke={smokeUid}, smokeExists={Exists(smokeUid)}");
+
+                RemCompDeferred<SmokeAffectedComponent>(uid);
+                continue;
+            }
+            SmokeReact(uid, smokeUid, smokeComponent);
         }
     }
 
