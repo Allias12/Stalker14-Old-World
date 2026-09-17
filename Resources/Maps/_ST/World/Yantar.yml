@@ -4,8 +4,8 @@ meta:
   engineVersion: 268.0.0
   forkId: ""
   forkVersion: ""
-  time: 09/16/2026 16:26:47
-  entityCount: 7585
+  time: 09/17/2026 09:23:02
+  entityCount: 7581
 maps:
 - 1
 grids:
@@ -40972,14 +40972,14 @@ entities:
       parent: 1
 - proto: MutantSpawnerBloodsucker_1to2_10
   entities:
-  - uid: 6902
+  - uid: 6470
     components:
     - type: Transform
       pos: -18.5,-106.5
       parent: 1
-- proto: MutantSpawnerBloodsucker_1to2_25
+- proto: MutantSpawnerBloodsucker_1to2_50
   entities:
-  - uid: 6901
+  - uid: 6471
     components:
     - type: Transform
       pos: -29.5,-104.5
@@ -41169,20 +41169,10 @@ entities:
     - type: Transform
       pos: -12.5,-120.5
       parent: 1
-  - uid: 6832
-    components:
-    - type: Transform
-      pos: -5.5,-114.5
-      parent: 1
   - uid: 6833
     components:
     - type: Transform
       pos: -8.5,-123.5
-      parent: 1
-  - uid: 6834
-    components:
-    - type: Transform
-      pos: -11.5,-128.5
       parent: 1
   - uid: 7314
     components:
@@ -41205,6 +41195,16 @@ entities:
     components:
     - type: Transform
       pos: 21.5,48.5
+      parent: 1
+  - uid: 6832
+    components:
+    - type: Transform
+      pos: -5.5,-114.5
+      parent: 1
+  - uid: 6834
+    components:
+    - type: Transform
+      pos: -11.5,-128.5
       parent: 1
 - proto: MutantSpawnerSwampT2_1to3_50
   entities:
@@ -47780,6 +47780,11 @@ entities:
     - type: Transform
       pos: 71.5,-62.5
       parent: 1
+  - uid: 6476
+    components:
+    - type: Transform
+      pos: -31.5,-116.5
+      parent: 1
   - uid: 7534
     components:
     - type: Transform
@@ -47819,6 +47824,11 @@ entities:
       parent: 1
 - proto: STAnomalyGeneratorBlocker5
   entities:
+  - uid: 6472
+    components:
+    - type: Transform
+      pos: -24.5,-108.5
+      parent: 1
   - uid: 6867
     components:
     - type: Transform
@@ -51521,60 +51531,10 @@ entities:
       parent: 1
 - proto: STSpawnBoundary
   entities:
-  - uid: 6470
-    components:
-    - type: Transform
-      pos: -24.5,-111.5
-      parent: 1
-  - uid: 6471
-    components:
-    - type: Transform
-      pos: -27.5,-108.5
-      parent: 1
-  - uid: 6472
-    components:
-    - type: Transform
-      pos: -47.5,-103.5
-      parent: 1
-  - uid: 6476
-    components:
-    - type: Transform
-      pos: -50.5,-105.5
-      parent: 1
-  - uid: 6477
-    components:
-    - type: Transform
-      pos: -47.5,-106.5
-      parent: 1
-  - uid: 6478
-    components:
-    - type: Transform
-      pos: -47.5,-107.5
-      parent: 1
   - uid: 6479
     components:
     - type: Transform
       pos: -47.5,-108.5
-      parent: 1
-  - uid: 6480
-    components:
-    - type: Transform
-      pos: -43.5,-110.5
-      parent: 1
-  - uid: 6481
-    components:
-    - type: Transform
-      pos: -46.5,-110.5
-      parent: 1
-  - uid: 6482
-    components:
-    - type: Transform
-      pos: -40.5,-108.5
-      parent: 1
-  - uid: 6590
-    components:
-    - type: Transform
-      pos: -26.5,-116.5
       parent: 1
   - uid: 6835
     components:
@@ -51600,6 +51560,11 @@ entities:
     components:
     - type: Transform
       pos: -38.5,-141.5
+      parent: 1
+  - uid: 6902
+    components:
+    - type: Transform
+      pos: -16.5,-61.5
       parent: 1
   - uid: 7100
     components:
@@ -51770,6 +51735,16 @@ entities:
     components:
     - type: Transform
       pos: -42.5,-139.5
+      parent: 1
+  - uid: 7366
+    components:
+    - type: Transform
+      pos: -16.5,-62.5
+      parent: 1
+  - uid: 7367
+    components:
+    - type: Transform
+      pos: -16.5,-66.5
       parent: 1
 - proto: STTrashT2CacheSpawner
   entities:
@@ -66216,6 +66191,13 @@ entities:
       name: Yantar - West
     - type: Transform
       pos: -53.5,44.5
+      parent: 1
+  - uid: 6901
+    components:
+    - type: MetaData
+      name: Yantar - Overgrown Bunker
+    - type: Transform
+      pos: -24.5,-109.5
       parent: 1
 - proto: WoodBlueDoorFallout
   entities:
