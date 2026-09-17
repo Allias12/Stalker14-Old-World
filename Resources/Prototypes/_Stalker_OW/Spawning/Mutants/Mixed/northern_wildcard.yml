@@ -11,15 +11,14 @@
     - type: SpawnOnApproach
       prototypes:
         - MobMutantOldBoar
-        - MobMutantPseudodog
+        - MutantPsidog
         - MobMutantSnork
         - STMobMutantBearT2
       restricted:
         - MobMutantOldBoar
-        - MobMutantPseudodog
+        - MutantPsidog
         - MobMutantSnork
         - STMobMutantBearT2
-
 
 - type: entity
   id: MutantSpawnerNorthernWildcardT2_1to3_25
@@ -41,7 +40,7 @@
       maxAmount: 3
       chance: 0.50
       
-# T3 - Unused as of now
+# T3
 - type: entity
   id: MutantSpawnerNorthernWildcardT3Base
   parent: MutantSpawnerBase
@@ -58,7 +57,6 @@
         - STMutantController
         - MobMutantBloodsucker
         - STMobMutantBearT3
-
 
 - type: entity
   id: MutantSpawnerNorthernWildcardT3_1to2_25
