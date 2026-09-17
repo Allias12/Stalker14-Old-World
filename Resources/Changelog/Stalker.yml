@@ -3860,5 +3860,16 @@
   id: 430
   time: '2026-09-17T09:32:07.195070+00:00'
   url: https://github.com/Stalker-Old-World/Stalker14-Old-World/pull/60
+- author: kuro964
+  changes:
+  - message: Mutant spawners have been slightly optimized
+    type: Tweak
+  - message: Adjusted Red Forest mutant spawns
+    type: Tweak
+  - message: Adjusted Jupiter mutant spawns
+    type: Tweak
+  id: 431
+  time: '2026-09-17T09:37:45.362757+00:00'
+  url: https://github.com/Stalker-Old-World/Stalker14-Old-World/pull/64
 Name: Stalker
 Order: -1
