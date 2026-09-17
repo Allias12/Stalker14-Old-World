@@ -3853,5 +3853,12 @@
   id: 429
   time: '2026-09-17T02:45:08.407232+00:00'
   url: https://github.com/Stalker-Old-World/Stalker14-Old-World/pull/59
+- author: SnekiChaos
+  changes:
+  - message: Underground of Yantars Eco bunker.
+    type: Add
+  id: 430
+  time: '2026-09-17T09:32:07.195070+00:00'
+  url: https://github.com/Stalker-Old-World/Stalker14-Old-World/pull/60
 Name: Stalker
 Order: -1
