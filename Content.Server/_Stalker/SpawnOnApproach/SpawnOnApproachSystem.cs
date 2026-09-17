@@ -1,5 +1,4 @@
 using System.Numerics;
-using Content.Server._Stalker.ApproachTrigger;
 using Content.Shared.Maps;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Physics;
@@ -17,10 +16,10 @@ namespace Content.Server._Stalker.SpawnOnApproach;
 
 public sealed class SpawnOnApproachSystem : EntitySystem
 {
-    [Robust.Shared.IoC.Dependency] private readonly IRobustRandom _random = default!;
-    [Robust.Shared.IoC.Dependency] private readonly IGameTiming _timing = default!;
-    [Robust.Shared.IoC.Dependency] private readonly TurfSystem _turf = default!;
-    [Robust.Shared.IoC.Dependency] private readonly EntityLookupSystem _lookupSystem = default!;
+    [Dependency] private readonly IRobustRandom _random = default!;
+    [Dependency] private readonly IGameTiming _timing = default!;
+    [Dependency] private readonly TurfSystem _turf = default!;
+    [Dependency] private readonly EntityLookupSystem _lookupSystem = default!;
 
     // ST:OW begin
     private static readonly Vector2i[] CardinalDirections =
@@ -65,53 +64,82 @@ public sealed class SpawnOnApproachSystem : EntitySystem
     private void SpawnWithOffset(Entity<SpawnOnApproachComponent> entity)
     {
         var comp = entity.Comp;
-        if (!_random.Prob(Math.Clamp(comp.Chance, 0f, 1f)))
+        comp.LastRequestedAmount = 0;
+        comp.LastSpawnedAmount = 0;
+
+        var chanceIncrease = Math.Max(0f, comp.ChanceIncreaseOnFailure);
+        var effectiveChance = Math.Clamp(
+            comp.Chance + comp.ConsecutiveFailures * chanceIncrease,
+            0f,
+            1f);
+        comp.LastEffectiveChance = effectiveChance;
+
+        if (!_random.Prob(effectiveChance))
         {
+            if (chanceIncrease > 0f && comp.ConsecutiveFailures < int.MaxValue)
+                comp.ConsecutiveFailures++;
+
+            comp.LastResult = SpawnOnApproachResult.ChanceFailed;
+
             if (comp.ShouldTimeoutOnRoll)
-            {
-                comp.CoolDownTime = _timing.CurTime + TimeSpan.FromSeconds(comp.Cooldown);
-                comp.Enabled = false;
-            }
+                StartCooldown(comp, comp.FailureCooldown ?? comp.Cooldown);
 
             return;
         }
 
-        var xform = Transform(entity);
-        // ST:OW begin
-        var amount = _random.Next(
-            comp.MinAmount,
-            comp.MaxAmount + 1);
+        var amount = _random.Next(comp.MinAmount, comp.MaxAmount + 1);
+        comp.LastRequestedAmount = amount;
 
-        if (amount > 0)
+        if (amount == 0)
         {
-            var (reachableTiles, fallbackCoords) =
-                BuildSpawnSearchArea(
-                    xform.Coordinates,
-                    comp.MaxOffset);
-
-            for (var i = 0; i < amount; i++)
-            {
-                if (!TryFindSpawnPosition(
-                        entity.Owner,
-                        comp,
-                        xform.Coordinates,
-                        reachableTiles,
-                        fallbackCoords,
-                        out var spawnCoords))
-                {
-                    continue;
-                }
-
-                var proto = _random.Pick(comp.EntProtoIds);
-                Spawn(proto, spawnCoords);
-            }
+            comp.ConsecutiveFailures = 0;
+            comp.LastResult = SpawnOnApproachResult.ZeroAmount;
+            StartCooldown(comp, comp.Cooldown);
+            return;
         }
 
-        if (TryComp<ApproachTriggerComponent>(entity, out var approach))
-            approach.Enabled = false;
+        var xform = Transform(entity);
+        var (reachableTiles, fallbackCoords) =
+            BuildSpawnSearchArea(xform.Coordinates, comp.MaxOffset);
 
-        comp.CoolDownTime =
-            _timing.CurTime + TimeSpan.FromSeconds(comp.Cooldown);
+        for (var i = 0; i < amount && reachableTiles.Count > 0; i++)
+        {
+            if (!TryFindSpawnPosition(
+                    entity.Owner,
+                    comp,
+                    xform.Coordinates,
+                    reachableTiles,
+                    fallbackCoords,
+                    out var spawnCoords))
+            {
+                continue;
+            }
+
+            var proto = _random.Pick(comp.EntProtoIds);
+            Spawn(proto, spawnCoords);
+            comp.LastSpawnedAmount++;
+        }
+
+        if (comp.LastSpawnedAmount == 0)
+        {
+            // If spawner cannot find a valid spawn despite a success roll,
+            // Then use failureCooldown for less CD
+            comp.LastResult = SpawnOnApproachResult.NoValidPosition;
+            StartCooldown(comp, comp.FailureCooldown ?? comp.Cooldown);
+            return;
+        }
+
+        // Partial spawns (i.e. 2/4) counts as a success
+        comp.ConsecutiveFailures = 0;
+        comp.LastResult = comp.LastSpawnedAmount < amount
+            ? SpawnOnApproachResult.PartialSpawn
+            : SpawnOnApproachResult.Spawned;
+        StartCooldown(comp, comp.Cooldown);
+    }
+
+    private void StartCooldown(SpawnOnApproachComponent comp, float seconds)
+    {
+        comp.CoolDownTime = _timing.CurTime + TimeSpan.FromSeconds(seconds);
         comp.Enabled = false;
     }
     // ST:OW end
@@ -205,7 +233,7 @@ public sealed class SpawnOnApproachSystem : EntitySystem
         var query =
             EntityQueryEnumerator<SpawnOnApproachComponent>();
 
-        while (query.MoveNext(out var uid, out var spawner))
+        while (query.MoveNext(out _, out var spawner))
         {
             if (spawner.Enabled)
                 continue;
@@ -213,11 +241,7 @@ public sealed class SpawnOnApproachSystem : EntitySystem
             if (spawner.CoolDownTime > now)
                 continue;
 
-            if (TryComp<ApproachTriggerComponent>(uid, out var approach))
-            {
-                approach.Enabled = true;
-            }
-
+            spawner.CoolDownTime = null;
             spawner.Enabled = true;
         }
     }
@@ -314,21 +338,23 @@ public sealed class SpawnOnApproachSystem : EntitySystem
         List<EntityCoordinates> fallbackCoords,
         out EntityCoordinates result)
     {
-        result = default;
-        var validCount = 0;
-
-        foreach (var coords in fallbackCoords)
+        for (var i = 0; i < fallbackCoords.Count; i++)
         {
-            if (!IsValidSpawnPosition(spawner, coords, comp))
+            var selected = _random.Next(i, fallbackCoords.Count);
+
+            var candidate = fallbackCoords[selected];
+            fallbackCoords[selected] = fallbackCoords[i];
+            fallbackCoords[i] = candidate;
+
+            if (!IsValidSpawnPosition(spawner, candidate, comp))
                 continue;
 
-            validCount++;
-
-            if (_random.Next(validCount) == 0)
-                result = coords;
+            result = candidate;
+            return true;
         }
 
-        return validCount > 0;
+        result = default;
+        return false;
     }
     
     // Determine if the tile is "traversable"
@@ -353,7 +379,7 @@ public sealed class SpawnOnApproachSystem : EntitySystem
                 return false;
         }
 
-        if (_turf.IsTileBlocked(tile.Value, CollisionGroup.Impassable))
+        if (_turf.IsTileBlocked(tile.Value, CollisionGroup.MobMask))
             return false;
 
         gridIndices = tile.Value.GridIndices;
@@ -373,7 +399,7 @@ public sealed class SpawnOnApproachSystem : EntitySystem
         if (tile == null || tile.Value.Tile.IsEmpty)
             return false;
 
-        if (!comp.SpawnInside && _turf.IsTileBlocked(tile.Value, CollisionGroup.Impassable))
+        if (_turf.IsTileBlocked(tile.Value, CollisionGroup.MobMask))
             return false;
 
         var checkRestricted = comp.RestrictedProtos.Count > 0;
