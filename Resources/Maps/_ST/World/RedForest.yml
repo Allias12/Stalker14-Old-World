@@ -4,8 +4,8 @@ meta:
   engineVersion: 268.0.0
   forkId: ""
   forkVersion: ""
-  time: 09/17/2026 06:18:25
-  entityCount: 22741
+  time: 09/17/2026 08:24:35
+  entityCount: 22738
 maps:
 - 1
 grids:
@@ -107546,7 +107546,7 @@ entities:
       pos: -11.5,-45.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -4718.651
+      secondsUntilStateChange: -4906.825
       state: Opening
 - proto: HermoDverTypeOneCNClosed
   entities:
@@ -128819,6 +128819,11 @@ entities:
       parent: 1
 - proto: MutantSpawnerOldBoar_1to2_50
   entities:
+  - uid: 59
+    components:
+    - type: Transform
+      pos: 176.5,31.5
+      parent: 1
   - uid: 1239
     components:
     - type: Transform
@@ -128884,11 +128889,6 @@ entities:
     components:
     - type: Transform
       pos: 112.5,116.5
-      parent: 1
-  - uid: 4221
-    components:
-    - type: Transform
-      pos: 176.5,31.5
       parent: 1
   - uid: 4512
     components:
@@ -129015,17 +129015,19 @@ entities:
     - type: Transform
       pos: 172.5,-27.5
       parent: 1
+- proto: MutantSpawnerZombie_1to2_75
+  entities:
+  - uid: 4221
+    components:
+    - type: Transform
+      pos: 18.5,37.5
+      parent: 1
 - proto: MutantSpawnerZombie_1to4_50
   entities:
   - uid: 5264
     components:
     - type: Transform
       pos: 127.5,0.5
-      parent: 1
-  - uid: 7149
-    components:
-    - type: Transform
-      pos: 17.5,37.5
       parent: 1
   - uid: 7172
     components:
@@ -154924,15 +154926,10 @@ entities:
     - type: Transform
       pos: 77.5,149.5
       parent: 1
-  - uid: 4436
+  - uid: 6257
     components:
     - type: Transform
-      pos: 91.5,171.5
-      parent: 1
-  - uid: 8845
-    components:
-    - type: Transform
-      pos: 81.5,175.5
+      pos: 90.5,171.5
       parent: 1
   - uid: 8848
     components:
@@ -154943,6 +154940,13 @@ entities:
     components:
     - type: Transform
       pos: 70.5,139.5
+      parent: 1
+- proto: STGuardSpawnerMonolith3550
+  entities:
+  - uid: 4436
+    components:
+    - type: Transform
+      pos: 62.5,156.5
       parent: 1
 - proto: STHiddenCacheT3Spawner
   entities:
@@ -155668,20 +155672,10 @@ entities:
       parent: 1
 - proto: STSpawnBoundary
   entities:
-  - uid: 59
-    components:
-    - type: Transform
-      pos: 86.5,176.5
-      parent: 1
   - uid: 5748
     components:
     - type: Transform
-      pos: 76.5,176.5
-      parent: 1
-  - uid: 6257
-    components:
-    - type: Transform
-      pos: 76.5,175.5
+      pos: 23.5,39.5
       parent: 1
   - uid: 6920
     components:
@@ -155692,11 +155686,6 @@ entities:
     components:
     - type: Transform
       pos: -14.5,-36.5
-      parent: 1
-  - uid: 8101
-    components:
-    - type: Transform
-      pos: 76.5,177.5
       parent: 1
   - uid: 9577
     components:
@@ -196651,7 +196640,7 @@ entities:
       pos: 85.5,93.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -7244.4097
+      secondsUntilStateChange: -7432.584
       state: Opening
   - uid: 22662
     components:
