@@ -3845,5 +3845,13 @@
   id: 428
   time: '2026-09-15T04:39:33.828579+00:00'
   url: https://github.com/Stalker-Old-World/Stalker14-Old-World/pull/56
+- author: SnekiChaos
+  changes:
+  - message: Fixed broken roofing in cordon. No more random dark spots outside of
+      buildings.
+    type: Fix
+  id: 429
+  time: '2026-09-17T02:45:08.407232+00:00'
+  url: https://github.com/Stalker-Old-World/Stalker14-Old-World/pull/59
 Name: Stalker
 Order: -1
