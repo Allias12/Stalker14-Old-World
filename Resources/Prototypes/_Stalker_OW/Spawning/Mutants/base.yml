@@ -23,8 +23,11 @@
       minOffset: 5 # Min tiles from spawner
       maxOffset: 8 # Max tiles from spawner
       
-      minPlayerDistance: 6 # Min distance from player
+      spawnNearPlayers: false
+      minPlayerDistance: 5 # Min distance from player
 
-      chance: 1 # x100, 1x100 = 100% spawn rate
-      cooldown: 1800 # In seconds, 30 minutes
+      chance: 1 # 100% spawn chance
+      cooldown: 1800 # In seconds, 30 minutes after a SUCCESSFUL spawn
+      failureCooldown: 600 # In seconds, 10 minutes after a FAILED spawn
+      chanceIncreaseOnFailure: 0.10 # +10% per failed spawn roll
       timeoutOnRoll: true # Cooldown always applies
