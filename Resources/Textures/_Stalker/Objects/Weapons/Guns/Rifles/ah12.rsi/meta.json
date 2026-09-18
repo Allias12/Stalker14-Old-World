@@ -42,7 +42,8 @@
       "name": "base-scope"
     },
     {
-      "name": "equipped-SUITSTORAGE"
+      "name": "equipped-SUITSTORAGE",
+      "directions": 4
     },
     {
       "name": "muzzle"
