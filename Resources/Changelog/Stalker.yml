@@ -3871,5 +3871,12 @@
   id: 431
   time: '2026-09-17T09:37:45.362757+00:00'
   url: https://github.com/Stalker-Old-World/Stalker14-Old-World/pull/64
+- author: whiffets, @SquishyEmmaaaa
+  changes:
+  - message: Multiple guns now have the correct sprites when worn on the back.
+    type: Fix
+  id: 432
+  time: '2026-09-18T05:07:31.727293+00:00'
+  url: https://github.com/Stalker-Old-World/Stalker14-Old-World/pull/66
 Name: Stalker
 Order: -1
