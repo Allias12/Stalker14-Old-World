@@ -4,8 +4,8 @@ meta:
   engineVersion: 268.0.0
   forkId: ""
   forkVersion: ""
-  time: 07/19/2026 20:56:17
-  entityCount: 3204
+  time: 09/18/2026 10:05:58
+  entityCount: 3202
 maps:
 - 1
 grids:
@@ -1310,9 +1310,252 @@ entities:
       markerLayers: []
       loadedMarkers: {}
       pendingMarkers: {}
-      loadedChunks: []
-      entities: {}
-      decals: {}
+      loadedChunks:
+      - -16,128
+      - 40,168
+      - 32,168
+      - 24,168
+      - 16,168
+      - 8,168
+      - -16,120
+      - 40,144
+      - 40,136
+      - 40,152
+      - 32,136
+      - 0,168
+      - -16,112
+      - 32,144
+      - 40,112
+      - 32,152
+      - 40,160
+      - -24,168
+      - 40,128
+      - -16,104
+      - 24,144
+      - 24,152
+      - 32,160
+      - -24,160
+      - 32,128
+      - 24,160
+      - 24,128
+      - 16,144
+      - 16,152
+      - 8,152
+      - 16,160
+      - -24,152
+      - 16,128
+      - 8,144
+      - 32,112
+      - 40,120
+      - -24,144
+      - 8,128
+      - 8,160
+      - -24,136
+      - 24,136
+      - -24,128
+      - 24,112
+      - 32,120
+      - 0,160
+      - -8,104
+      - 16,136
+      - 16,112
+      - 8,136
+      - -24,120
+      - -8,168
+      - 40,104
+      - 8,112
+      - -8,160
+      - 32,104
+      - -16,168
+      - 24,104
+      - 16,104
+      - 0,112
+      - -8,112
+      - -24,112
+      - 0,136
+      - -8,136
+      - 8,104
+      - 24,120
+      - 16,120
+      - 8,120
+      - 0,120
+      - 0,152
+      - 0,144
+      - -8,120
+      - -16,160
+      - 0,128
+      - -16,136
+      - -8,152
+      - -8,144
+      - -16,152
+      - -16,144
+      - -8,128
+      - -24,104
+      - 0,104
+      entities:
+        -16,128: {}
+        40,168: {}
+        32,168: {}
+        24,168: {}
+        16,168: {}
+        8,168: {}
+        -16,120: {}
+        40,144: {}
+        40,136: {}
+        40,152: {}
+        32,136: {}
+        0,168: {}
+        -16,112: {}
+        32,144: {}
+        40,112: {}
+        32,152: {}
+        40,160: {}
+        -24,168: {}
+        40,128: {}
+        -16,104: {}
+        24,144: {}
+        24,152: {}
+        32,160: {}
+        -24,160: {}
+        32,128: {}
+        24,160: {}
+        24,128: {}
+        16,144: {}
+        16,152: {}
+        8,152: {}
+        16,160: {}
+        -24,152: {}
+        16,128: {}
+        8,144: {}
+        32,112: {}
+        40,120: {}
+        -24,144: {}
+        8,128: {}
+        8,160: {}
+        -24,136: {}
+        24,136: {}
+        -24,128: {}
+        24,112: {}
+        32,120: {}
+        0,160: {}
+        -8,104: {}
+        16,136: {}
+        16,112: {}
+        8,136: {}
+        -24,120: {}
+        -8,168: {}
+        40,104: {}
+        8,112: {}
+        -8,160: {}
+        32,104: {}
+        -16,168: {}
+        24,104: {}
+        16,104: {}
+        0,112: {}
+        -8,112: {}
+        -24,112: {}
+        0,136: {}
+        -8,136: {}
+        8,104: {}
+        24,120: {}
+        16,120: {}
+        8,120: {}
+        0,120: {}
+        0,152: {}
+        0,144: {}
+        -8,120: {}
+        -16,160: {}
+        0,128: {}
+        -16,136: {}
+        -8,152: {}
+        -8,144: {}
+        -16,152: {}
+        -16,144: {}
+        -8,128: {}
+        -24,104: {}
+        0,104: {}
+      decals:
+        -16,128: {}
+        40,168: {}
+        32,168: {}
+        24,168: {}
+        16,168: {}
+        8,168: {}
+        -16,120: {}
+        40,144: {}
+        40,136: {}
+        40,152: {}
+        32,136: {}
+        0,168: {}
+        -16,112: {}
+        32,144: {}
+        40,112: {}
+        32,152: {}
+        40,160: {}
+        -24,168: {}
+        40,128: {}
+        -16,104: {}
+        24,144: {}
+        24,152: {}
+        32,160: {}
+        -24,160: {}
+        32,128: {}
+        24,160: {}
+        24,128: {}
+        16,144: {}
+        16,152: {}
+        8,152: {}
+        16,160: {}
+        -24,152: {}
+        16,128: {}
+        8,144: {}
+        32,112: {}
+        40,120: {}
+        -24,144: {}
+        8,128: {}
+        8,160: {}
+        -24,136: {}
+        24,136: {}
+        -24,128: {}
+        24,112: {}
+        32,120: {}
+        0,160: {}
+        -8,104: {}
+        16,136: {}
+        16,112: {}
+        8,136: {}
+        -24,120: {}
+        -8,168: {}
+        40,104: {}
+        8,112: {}
+        -8,160: {}
+        32,104: {}
+        -16,168: {}
+        24,104: {}
+        16,104: {}
+        0,112: {}
+        -8,112: {}
+        -24,112: {}
+        0,136: {}
+        -8,136: {}
+        8,104: {}
+        24,120: {}
+        16,120: {}
+        8,120: {}
+        0,120: {}
+        0,152: {}
+        0,144: {}
+        -8,120: {}
+        -16,160: {}
+        0,128: {}
+        -16,136: {}
+        -8,152: {}
+        -8,144: {}
+        -16,152: {}
+        -16,144: {}
+        -8,128: {}
+        -24,104: {}
+        0,104: {}
       modifiedTiles:
         -32,-32:
         - -32,-32
@@ -45623,6 +45866,68 @@ entities:
     - type: Transform
       pos: 50.5,55.5
       parent: 1
+- proto: MutantSpawnerBloodsucker_1to2_10
+  entities:
+  - uid: 2998
+    components:
+    - type: Transform
+      pos: -16.5,30.5
+      parent: 1
+- proto: MutantSpawnerBloodsucker_1to2_50
+  entities:
+  - uid: 3060
+    components:
+    - type: Transform
+      pos: 3.5,33.5
+      parent: 1
+- proto: MutantSpawnerController_1_25
+  entities:
+  - uid: 2863
+    components:
+    - type: Transform
+      pos: 8.5,141.5
+      parent: 1
+- proto: MutantSpawnerSnork_1to2_50
+  entities:
+  - uid: 2871
+    components:
+    - type: Transform
+      pos: 3.5,5.5
+      parent: 1
+- proto: MutantSpawnerZombie_1to2_50
+  entities:
+  - uid: 2857
+    components:
+    - type: Transform
+      pos: 34.5,66.5
+      parent: 1
+  - uid: 2858
+    components:
+    - type: Transform
+      pos: -25.5,30.5
+      parent: 1
+  - uid: 2860
+    components:
+    - type: Transform
+      pos: 18.5,74.5
+      parent: 1
+  - uid: 2862
+    components:
+    - type: Transform
+      pos: 22.5,117.5
+      parent: 1
+  - uid: 2864
+    components:
+    - type: Transform
+      pos: 34.5,154.5
+      parent: 1
+- proto: MutantSpawnerZombie_1to4_25
+  entities:
+  - uid: 2865
+    components:
+    - type: Transform
+      pos: 61.5,133.5
+      parent: 1
 - proto: OldGen
   entities:
   - uid: 1750
@@ -47205,35 +47510,8 @@ entities:
     - type: Transform
       pos: 8.5,78.5
       parent: 1
-- proto: STCacheT1Spawner25
-  entities:
-  - uid: 786
-    components:
-    - type: Transform
-      pos: 18.5,78.5
-      parent: 1
-  - uid: 787
-    components:
-    - type: Transform
-      pos: 21.5,78.5
-      parent: 1
 - proto: STCacheT3Spawner25
   entities:
-  - uid: 896
-    components:
-    - type: Transform
-      pos: 12.5,37.5
-      parent: 1
-  - uid: 897
-    components:
-    - type: Transform
-      pos: 12.5,61.5
-      parent: 1
-  - uid: 898
-    components:
-    - type: Transform
-      pos: -22.5,31.5
-      parent: 1
   - uid: 2869
     components:
     - type: Transform
@@ -47246,13 +47524,6 @@ entities:
     - type: Transform
       pos: 15.5,97.5
       parent: 1
-  - uid: 3000
-    components:
-    - type: Transform
-      pos: 11.5,144.5
-      parent: 1
-    - type: RandomSpawner
-      chance: 0.5
   - uid: 3001
     components:
     - type: Transform
@@ -47262,11 +47533,6 @@ entities:
     components:
     - type: Transform
       pos: 18.5,154.5
-      parent: 1
-  - uid: 3059
-    components:
-    - type: Transform
-      pos: 33.5,56.5
       parent: 1
 - proto: STCacheT5Spawner25
   entities:
@@ -47984,6 +48250,40 @@ entities:
     - type: Transform
       pos: 0.5,171.5
       parent: 1
+- proto: STOWCacheT3Spawner100
+  entities:
+  - uid: 786
+    components:
+    - type: Transform
+      pos: 21.5,78.5
+      parent: 1
+  - uid: 787
+    components:
+    - type: Transform
+      pos: 12.5,37.5
+      parent: 1
+  - uid: 896
+    components:
+    - type: Transform
+      pos: 12.5,61.5
+      parent: 1
+  - uid: 897
+    components:
+    - type: Transform
+      pos: -22.5,31.5
+      parent: 1
+  - uid: 3000
+    components:
+    - type: Transform
+      pos: 33.5,56.5
+      parent: 1
+- proto: STOWCacheT4Spawner100
+  entities:
+  - uid: 898
+    components:
+    - type: Transform
+      pos: 11.5,144.5
+      parent: 1
 - proto: STRadiostation
   entities:
   - uid: 1935
@@ -48088,68 +48388,6 @@ entities:
     components:
     - type: Transform
       pos: 36.5,86.5
-      parent: 1
-- proto: MutantSpawnerBloodsucker_1to2_10
-  entities:
-  - uid: 2998
-    components:
-    - type: Transform
-      pos: -16.5,30.5
-      parent: 1
-- proto: MutantSpawnerBloodsucker_1to2_50
-  entities:
-  - uid: 3060
-    components:
-    - type: Transform
-      pos: 3.5,33.5
-      parent: 1
-- proto: MutantSpawnerController_1_25
-  entities:
-  - uid: 2863
-    components:
-    - type: Transform
-      pos: 8.5,141.5
-      parent: 1
-- proto: MutantSpawnerSnork_1to2_50
-  entities:
-  - uid: 2871
-    components:
-    - type: Transform
-      pos: 3.5,5.5
-      parent: 1
-- proto: MutantSpawnerZombie_1to2_50
-  entities:
-  - uid: 2857
-    components:
-    - type: Transform
-      pos: 34.5,66.5
-      parent: 1
-  - uid: 2858
-    components:
-    - type: Transform
-      pos: -25.5,30.5
-      parent: 1
-  - uid: 2860
-    components:
-    - type: Transform
-      pos: 18.5,74.5
-      parent: 1
-  - uid: 2862
-    components:
-    - type: Transform
-      pos: 22.5,117.5
-      parent: 1
-  - uid: 2864
-    components:
-    - type: Transform
-      pos: 34.5,154.5
-      parent: 1
-- proto: MutantSpawnerZombie_1to4_25
-  entities:
-  - uid: 2865
-    components:
-    - type: Transform
-      pos: 61.5,133.5
       parent: 1
 - proto: STWallRockBasalt
   entities:

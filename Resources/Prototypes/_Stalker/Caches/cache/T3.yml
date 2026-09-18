@@ -12,15 +12,17 @@
     - type: StorageFill
       contents:
         - id: STCraftMultilayerPCBT3
-          prob: 0.1
+          prob: 0.3
+        - id: STCraftPlasticFittingT3
+          prob: 0.3
         - id: STCraftQuartzCrystalT3
-          prob: 0.1
+          prob: 0.3
         - id: STCraftSturdyHideT3
-          prob: 0.3
+          prob: 0.4
         - id: STCraftGlueKitT3
-          prob: 0.1
-        - id: STCraftSheetBrassT3
           prob: 0.3
+        - id: STCraftSheetBrassT3
+          prob: 0.4
         - id: STOWCraftBallisticPlateT3
           prob: 0.1
         # ow change end
@@ -92,30 +94,10 @@
           prob: 0.06
         - id: MedkitScience
           prob: 0.015
-        - id: GeigerCounter
-          prob: 0.045
-        - id: BaseRadio
-          prob: 0.045
-        - id: HandheldGPSBasic
-          prob: 0.045
         - id: BoxArtcontDamaged #EN
           prob: 0.03
-        - id: STFlashlightSeclite
-          prob: 0.045
-        - id: STHeadLight
-          prob: 0.045
-        - id: PowerCellHyper
-          prob: 0.09
-        - id: STJewelryGold
-          prob: 0.06
-        - id: STJewelrySilver
-          prob: 0.06
-        - id: STGoldRingBigDiamond
-          prob: 0.06
-        - id: STWristwatchGold
-          prob: 0.06
         - id: CraftMaterialGunpowder
-          prob: 0.06
+          prob: 0.3
         - id: CraftLeatherbox
           prob: 0.002
         - id: ToolkitTearOne

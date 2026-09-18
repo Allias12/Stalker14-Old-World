@@ -1,0 +1,169 @@
+﻿- type: entity
+  id: STOWCacheT1Spawner100
+  name: cache trigger T1 (100%)
+  suffix: STOW, T1, Trigger, Cache
+  parent: FlexibleMarker
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Other/Boxes/green_crate.rsi
+      state: icon
+    - type: RandomSpawner
+      prototypes:
+        - STCache1T1
+        - STCache2T1
+        - STCache3T1
+      chance: 1
+      offset: 0.0
+
+- type: entity
+  id: STOWCacheT1Spawner50
+  name: cache trigger T1 (50%)
+  suffix: STOW, T1, Trigger, Cache
+  parent: FlexibleMarker
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Other/Boxes/green_crate.rsi
+      state: icon
+    - type: RandomSpawner
+      prototypes:
+        - STCache1T1
+        - STCache2T1
+        - STCache3T1
+      chance: 0.5
+      offset: 0.0
+
+- type: entity
+  id: STOWCacheT2Spawner100
+  name: cache trigger T2 (100%)
+  suffix: STOW, T2, Trigger, Cache
+  parent: FlexibleMarker
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Other/Boxes/green_crate.rsi
+      state: icon
+    - type: RandomSpawner
+      prototypes:
+        - STCache1T2
+        - STCache2T2
+        - STCache3T2
+      chance: 1
+      offset: 0.0
+
+- type: entity
+  id: STOWCacheT2Spawner50
+  name: cache trigger T2 (50%)
+  suffix: STOW, T2, Trigger, Cache
+  parent: FlexibleMarker
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Other/Boxes/green_crate.rsi
+      state: icon
+    - type: RandomSpawner
+      prototypes:
+        - STCache1T2
+        - STCache2T2
+        - STCache3T2
+      chance: 0.5
+      offset: 0.0
+      
+- type: entity
+  id: STOWCacheT3Spawner100
+  name: cache trigger T3 (100%)
+  suffix: STOW, T3, Trigger, Cache
+  parent: FlexibleMarker
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Other/Boxes/green_crate.rsi
+      state: icon
+    - type: RandomSpawner
+      prototypes:
+        - STCache1T3
+        - STCache2T3
+        - STCache3T3
+      chance: 1
+      offset: 0.0
+
+- type: entity
+  id: STOWCacheT3Spawner50
+  name: cache trigger T3 (50%)
+  suffix: STOW, T3, Trigger, Cache
+  parent: FlexibleMarker
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Other/Boxes/green_crate.rsi
+      state: icon
+    - type: RandomSpawner
+      prototypes:
+        - STCache1T3
+        - STCache2T3
+        - STCache3T3
+      chance: 1
+      offset: 0.0
+
+- type: entity
+  id: STOWCacheT4Spawner100
+  name: cache trigger T4(100%)
+  suffix: STOW, T4, Trigger, Cache
+  parent: FlexibleMarker
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Other/Boxes/green_crate.rsi
+      state: icon
+    - type: RandomSpawner
+      prototypes:
+        - STCache1T4
+        - STCache2T4
+        - STCache3T4
+      chance: 1
+      offset: 0.0
+
+- type: entity
+  id: STOWCacheT4Spawner50
+  name: cache trigger T4(50%)
+  suffix: STOW, T4, Trigger, Cache
+  parent: FlexibleMarker
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Other/Boxes/green_crate.rsi
+      state: icon
+    - type: RandomSpawner
+      prototypes:
+        - STCache1T4
+        - STCache2T4
+        - STCache3T4
+      chance: 1
+      offset: 0.0
+      
+- type: entity
+  id: STOWCacheT5Spawner100
+  name: cache trigger T5 (100%)
+  suffix: ST, T5, Trigger, Cache
+  parent: FlexibleMarker
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Other/Boxes/green_crate.rsi
+      state: icon
+    - type: RandomSpawner
+      prototypes:
+        - STCache1T5
+        - STCache2T5
+        - STCache3T5
+      chance: 1
+      offset: 0.0
+
+- type: entity
+  id: STOWCacheT5Spawner50
+  name: cache trigger T5 (50%)
+  suffix: ST, T5, Trigger, Cache
+  parent: FlexibleMarker
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Other/Boxes/green_crate.rsi
+      state: icon
+    - type: RandomSpawner
+      prototypes:
+        - STCache1T5
+        - STCache2T5
+        - STCache3T5
+      chance: 1
+      offset: 0.0

@@ -13,45 +13,49 @@
       contents:
         # OW CHANGE START
         - id: STCraftSheetBrassT3
-          prob: 0.4
+          prob: 0.6
         - id: STCraftSheetBrassT3
-          prob: 0.4
+          prob: 0.6
         - id: STCraftSheetBrassT3
-          prob: 0.4
+          prob: 0.6
         - id: STCraftSheetBrassT3
+          prob: 0.6
+        - id: STOWCraftBallisticPlateT3
+          prob: 0.4
+        - id: STOWCraftBallisticPlateT3
           prob: 0.4
         - id: STCraftHighPerformanceChipT4
-          prob: 0.1
+          prob: 0.4
         - id: STCraftHighPerformanceChipT4
-          prob: 0.1
+          prob: 0.3
         - id: STCraftSheetAluminumT4
-          prob: 0.1
+          prob: 0.4
         - id: STCraftSheetAluminumT4
           prob: 0.1
         - id: STCraftPlasticFittingT4
-          prob: 0.1
+          prob: 0.4
         - id: STCraftPlasticFittingT4
           prob: 0.1
         - id: STCraftPolymerFabricT4
-          prob: 0.1
+          prob: 0.4
         - id: STCraftPolymerFabricT4
           prob: 0.1
         - id: STCraftIndustrialThreadStaplesKitT4
-          prob: 0.1
+          prob: 0.4
         - id: STCraftIndustrialThreadStaplesKitT4
           prob: 0.1
         - id: STCraftNanoChipT5
-          prob: 0.4
+          prob: 0.3
         - id: STCraftSheetSteelT5
-          prob: 0.4
+          prob: 0.2
         - id: STCraftRedWoodPlankT5
-          prob: 0.4
+          prob: 0.3
         - id: STCraftAluminumOxideT5
-          prob: 0.4
+          prob: 0.3
         - id: STCraftCompositeMaterialT5
-          prob: 0.4
+          prob: 0.2
         - id: STCraftHighStrengthKitT5
-          prob: 0.4
+          prob: 0.3
         # OW change end
         - id: STBrutepack
           prob: 0.4
@@ -85,36 +89,10 @@
           prob: 0.1
         - id: MedkitScience
           prob: 0.025
-        - id: GeigerCounter
-          prob: 0.075
-        - id: BaseRadio
-          prob: 0.075
-        - id: HandheldGPSBasic
-          prob: 0.075
         - id: BoxArtcont
           prob: 0.05
-        - id: STFlashlightSeclite
-          prob: 0.075
-        - id: STHeadLight
-          prob: 0.075
-        - id: STJewelryGold
-          prob: 0.1
-        - id: STJewelryGold
-          prob: 0.1
-        - id: STJewelrySilver
-          prob: 0.1
-        - id: STJewelrySilver
-          prob: 0.1
-        - id: STGoldRingBigDiamond
-          prob: 0.1
-        - id: STGoldRingBigDiamond
-          prob: 0.1
-        - id: STWristwatchGold
-          prob: 0.1
-        - id: STWristwatchGold
-          prob: 0.1
         - id: CraftMaterialGunpowder
-          prob: 0.1
+          prob: 0.4
         - id: CraftLeatherbox
           prob: 0.004
         - id: ToolkitTearOne

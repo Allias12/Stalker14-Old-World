@@ -13,33 +13,37 @@
       contents:
         # OW CHANGE START
         - id: STCraftMultilayerPCBT3
-          prob: 0.1
+          prob: 0.3
         - id: STCraftMultilayerPCBT3
-          prob: 0.1
+          prob: 0.2
         - id: STCraftQuartzCrystalT3
-          prob: 0.1
+          prob: 0.5
         - id: STCraftQuartzCrystalT3
-          prob: 0.1
+          prob: 0.2
         - id: STCraftSturdyHideT3
-          prob: 0.1
+          prob: 0.5
         - id: STCraftSturdyHideT3
-          prob: 0.1
+          prob: 0.2
         - id: STCraftGlueKitT3
-          prob: 0.1
+          prob: 0.5
         - id: STCraftGlueKitT3
-          prob: 0.1
+          prob: 0.2
+        - id: STCraftPlasticFittingT3
+          prob: 0.4
         - id: STCraftSheetBrassT3
           prob: 0.5
+        - id: STOWCraftBallisticPlateT3
+          prob: 0.2   
         - id: STCraftHighPerformanceChipT4
-          prob: 0.3
+          prob: 0.2
         - id: STCraftSheetAluminumT4
-          prob: 0.3
+          prob: 0.2
         - id: STCraftPlasticFittingT4
-          prob: 0.3
+          prob: 0.2
         - id: STCraftPolymerFabricT4
-          prob: 0.3
+          prob: 0.2
         - id: STCraftIndustrialThreadStaplesKitT4
-          prob: 0.3
+          prob: 0.2
         # ow change end
         - id: STBrutepack
           prob: 0.35
@@ -67,44 +71,14 @@
           prob: 0.12
         - id: psyblock
           prob: 0.12
-        - id: MedkitAI2
-          prob: 0.2
         - id: MedkitMilitary
           prob: 0.08
         - id: MedkitScience
           prob: 0.02
-        - id: GeigerCounter
-          prob: 0.06
-        - id: BaseRadio
-          prob: 0.06
-        - id: HandheldGPSBasic
-          prob: 0.06
         - id: BoxArtcont
           prob: 0.04
-        - id: STFlashlightSeclite
-          prob: 0.06
-        - id: STHeadLight
-          prob: 0.06
-        - id: PowerCellHyper
-          prob: 0.12
-        - id: STJewelryGold
-          prob: 0.08
-        - id: STJewelryGold
-          prob: 0.08
-        - id: STJewelrySilver
-          prob: 0.08
-        - id: STJewelrySilver
-          prob: 0.08
-        - id: STGoldRingBigDiamond
-          prob: 0.08
-        - id: STGoldRingBigDiamond
-          prob: 0.08
-        - id: STWristwatchGold
-          prob: 0.08
-        - id: STWristwatchGold
-          prob: 0.08
         - id: CraftMaterialGunpowder
-          prob: 0.08
+          prob: 0.3
         - id: CraftLeatherbox
           prob: 0.003
         - id: ToolkitTearOne
