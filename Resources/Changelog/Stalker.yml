@@ -3878,5 +3878,14 @@
   id: 432
   time: '2026-09-18T05:07:31.727293+00:00'
   url: https://github.com/Stalker-Old-World/Stalker14-Old-World/pull/66
+- author: SnekiChaos
+  changes:
+  - message: Yantar bunker now has proper anomaly blockers
+    type: Tweak
+  - message: Switched some caustic anomalies to try and prevent gas anomaly looping.
+    type: Tweak
+  id: 433
+  time: '2026-09-18T21:46:14.445228+00:00'
+  url: https://github.com/Stalker-Old-World/Stalker14-Old-World/pull/71
 Name: Stalker
 Order: -1
