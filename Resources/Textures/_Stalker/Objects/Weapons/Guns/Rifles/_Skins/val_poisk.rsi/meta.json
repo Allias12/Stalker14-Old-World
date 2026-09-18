@@ -37,7 +37,8 @@
       "name": "bolt-open"
     },
     {
-      "name": "equipped-SUITSTORAGE"
+      "name": "equipped-SUITSTORAGE",
+      "directions": 4
     },
     {
       "name": "wielded-inhand-left"
