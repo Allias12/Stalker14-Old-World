@@ -17,12 +17,12 @@
   - type: Gun
     minAngle: 50
     maxAngle: 100
-    angleIncrease: 1.2
+    angleIncrease: 1
     angleDecay: 8
-    projectileSpeed: 55
-    fireRate: 6.5
+    projectileSpeed: 60
+    fireRate: 8
   - type: HeldSpeedModifier
-    walkModifier: 0.7
+    walkModifier: 0.6
     sprintModifier: 0.5
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/inhands/RPK-74mag.rsi
